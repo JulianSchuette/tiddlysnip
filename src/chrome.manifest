@@ -1,0 +1,5 @@
+content     tiddlysnip  	    content/
+locale      tiddlysnip  en-US       locale/en-US/
+overlay	    chrome://browser/content/browser.xul    chrome://tiddlysnip/content/browserOverlay.xul
+skin tiddlysnip	classic/1.0	skin/
+

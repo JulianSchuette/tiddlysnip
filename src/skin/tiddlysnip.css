@@ -1,0 +1,31 @@
+
+.tiddlysnip-url {
+	cursor: pointer;
+	color: #3A69A6;
+}
+
+.tiddlysnip-about-dialog {
+
+}
+
+
+.tiddlysnip-about-box {
+	background-color: white;
+	padding: 13px;
+	padding-top: 5px;
+	min-width:250px;
+}
+
+.tiddlysnip-title {
+	font-weight: bold; font-size: x-large;
+}
+
+.tiddlysnip-subtitle {
+	font-weight: bold;
+}
+
+.tiddlysnip-indent {
+    margin-left:10px;
+}
+
+

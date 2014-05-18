@@ -1,0 +1,91 @@
+<!-- tiddler.xul -->
+<!ENTITY  tiddlerwindow.title             "Preview snippet to save">
+<!ENTITY  tiddlertitle.label              "Tiddler title:">
+<!ENTITY  tiddlertags.label               "Tiddler tags:">
+<!ENTITY  tiddlertext.label               "Tiddler text:">
+<!ENTITY  tiddlerwindowsave.label         "Save">
+<!ENTITY  tiddlerwindowcancel.label       "Cancel">
+
+<!-- browseroverlay.xul -->
+<!ENTITY  contextselection.label          "TiddlySnip Selection as..">
+<!ENTITY  contextsimpleselection.label    "TiddlySnip Selection">
+<!ENTITY  contextclipboard.label          "TiddlySnip Clipboard as..">
+<!ENTITY  contextsimpleclipboard.label    "TiddlySnip Clipboard">
+<!ENTITY  contextsimplebookmark.label     "TiddlySnip this Page">
+<!ENTITY  contextbookmark.label           "TiddlySnip Page as..">
+
+<!-- existdialog.xul -->
+<!ENTITY  existwindow.title               "Title already in use">
+<!ENTITY  existcaption.label              "A tiddler with this title exists:">
+<!ENTITY  exist.rename                    "Rename">
+<!ENTITY  exist.append                    "Append">
+<!ENTITY  exist.overwrite                 "Overwrite">
+
+<!-- prefs.xul -->
+<!ENTITY  prefwindow.title                "TiddlySnip Preferences">
+<!ENTITY  preftabgeneral.label            "General">
+<!ENTITY  preftabbackup.label             "Backup options">
+<!ENTITY  preftabupload.label             "Server options">
+<!ENTITY  preftabviewtw.label             "View TW options">
+<!ENTITY  preftabcategories.label         "Categories">
+<!ENTITY  twoptions.label                 "TiddlyWiki options">
+<!ENTITY  twfileloc.label                 "File location:">
+<!ENTITY  twuser.label                    "TW username:">
+<!ENTITY  snippettags.label               "Snippet tiddler tags:">
+<!ENTITY  miscoptions.label               "Misc options:">
+<!ENTITY  incsource.label                 "Create link to source document in snippet tiddler">
+<!ENTITY  inchtml.label                   "Save selection as html">
+<!ENTITY  advancedmode.label              "Enable Advanced Mode (multiple snippet categories)">
+<!ENTITY  enableclipboard.label           "Enable saving from clipboard">
+<!ENTITY  enablebookmark.label            "Enable 'TiddlySnip this page' option.">
+<!ENTITY  enablenotifications.label       "Enable notifications on snippet save">
+<!ENTITY  enablesounds.label              "Enable notifications sounds">
+<!ENTITY  backupoptions.label             "Backup options:">
+<!ENTITY  enablebackups.label             "Enable backups">
+<!ENTITY  custombackuppath.label          "Custom backup path">
+<!ENTITY  backupfolder.label              "Folder for backup files:">
+<!ENTITY  browse.label                    "Browse">
+<!ENTITY  uploadoptions.label             "Upload plugin options">
+<!ENTITY  storeurl.label                  "Store url:">
+<!ENTITY  filename.label                  "File name:">
+<!ENTITY  backupdir.label                 "Backup directory:">
+<!ENTITY  uploaddir.label                 "Upload directory:">
+<!ENTITY  username.label                  "Username:">
+<!ENTITY  password.label                  "Password:">
+<!ENTITY  opentw.label                    "Open TW after saving">
+<!ENTITY  opentwin.label                  "Open TW in:">
+<!ENTITY  curtab.label                    "Current tab or window">
+<!ENTITY  newwindow.label                 "New window">
+<!ENTITY  foregroundtab.label             "New foreground tab">
+<!ENTITY  backgroundtab.label             "New background tab">
+<!ENTITY  snippetcategories.label         "Snippet Categories">
+<!ENTITY  cat_name.label                  "Name">
+<!ENTITY  cat_tags.label                  "Tags">
+<!ENTITY  saveeditcat.label               "Save/Edit categories">
+<!ENTITY  cat_namefield.label             "Name:">
+<!ENTITY  cat_tagsfield.label             "Tags:">
+<!ENTITY  edit.label                      "Edit">
+<!ENTITY  cancel.label                    "Cancel">
+<!ENTITY  delete.label                    "Delete">
+<!ENTITY  save.label                      "Save">
+<!ENTITY  submitchanges.label             "Save Changes">
+<!ENTITY  uploadoptions.label             "Upload Plugin Options">
+<!ENTITY  mtsoptions.label                "MTS Options">
+<!ENTITY  servertype.label                "Save to server using:">
+<!ENTITY  uploadplugin.label              "Upload plugin">
+<!ENTITY  mts.label                       "MTS">
+<!ENTITY  mtsphpfile.label                "Php file url:">
+<!ENTITY  mtshtmlfile.label               "Html file url:">
+<!ENTITY  togglemtsbackup.label           "Enable backups">
+<!ENTITY  mtslogout.label                 "Log out of MTS after saving">
+
+<!-- about.xul -->
+<!ENTITY  tiddlysnip.abouttitle.label     "TiddlySnip">
+<!ENTITY  tiddlysnip.version.label        "version ">
+<!ENTITY  tiddlysnip.createdby.label      "Created By:">
+<!ENTITY  tiddlysnip.homepage.label       "Home Page:">
+<!ENTITY  tiddlysnip.close.label          "Close">
+<!ENTITY  tiddlysnip.developers.label     "Developers:">
+<!ENTITY  tiddlysnip.usefullinks.label    "Useful links:">
+<!ENTITY  tiddlysnip.configguide.label    "TiddlySnip configuration guide">
+<!ENTITY  tiddlysnip.license.label        "License:">
