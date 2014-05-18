@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Localization Information -->
+<!DOCTYPE overlay SYSTEM "chrome://tiddlysnip/locale/tiddlysnip.dtd">
+
+<overlay id="tiddlySnipOverlay" 
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    
+<stringbundleset id="stringbundleset">
+    <stringbundle id="tiddlysnip-strings"
+        src="chrome://tiddlysnip/locale/tiddlysnip.properties"/>
+</stringbundleset>
+
+    <script type="application/x-javascript" src="browserOverlay.js"/>
+    <script type="application/x-javascript" src="fileIO.js"/>
+    <script type="application/x-javascript" src="twUtils.js"/>
+    <script type="application/x-javascript" src="categories.js"/>
+    <script type="application/x-javascript" src="tiddlySnip.js"/>
+    <script type="application/x-javascript" src="tiddler.js"/>
+    <script type="application/x-javascript" src="upload.js"/>
+    <script type="application/x-javascript" src="notifier.js"/>
+
+    <popup id="contentAreaContextMenu">
+	    <menu id="contextTiddlySnip" label="&contextselection.label;" insertafter="context-savelink">
+	        <menupopup id="contextTiddlySnipPopup" onpopupshowing="createCategoryPopups('Snip')"/>
+        </menu>
+   	    <menuitem id="contextSimpleTiddlySnip"
+	        label="&contextsimpleselection.label;"
+	        accesskey="T"
+	        insertafter="context-savelink"
+	        oncommand="tiddlySnip('Snip','','')"
+            />
+	    <menu id="contextTiddlyClip" label="&contextclipboard.label;" insertafter="context-stop">
+	        <menupopup id="contextTiddlyClipPopup" onpopupshowing="createCategoryPopups('Clip')"/>
+        </menu>
+   	    <menuitem id="contextSimpleTiddlyClip"
+	        label="&contextsimpleclipboard.label;"
+	        accesskey="T"
+	        insertafter="context-stop"
+	        oncommand="tiddlySnip('Clip','','')"
+            />
+	    <menu id="contextTiddlyBookmark" label="&contextbookmark.label;" insertafter="context-stop">
+	        <menupopup id="contextTiddlyBookmarkPopup" onpopupshowing="createCategoryPopups('Bookmark')"/>
+        </menu>
+   	    <menuitem id="contextSimpleTiddlyBookmark"
+	        label="&contextsimplebookmark.label;"
+	        accesskey="T"
+	        insertafter="context-stop"
+	        oncommand="tiddlySnip('Bookmark','','')"
+            />
+    </popup>
+
+    <menupopup id="menu_ToolsPopup">
+	<menuitem insertafter="devToolsSeparator" 
+	    label="TiddlySnip Preferences"
+	    oncommand="tiddlySnipPrefs();" />
+    </menupopup>
+    
+    
+      <statusbar id="status-bar">
+    <hbox>
+      <popupset style="overflow: auto;">
+        <tooltip id="tiddlysnip-popup" style="max-height: none; max-width: none;" onclick="this.hidePopup();"/>
+      </popupset>
+    </hbox>
+  </statusbar>
+</overlay>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!-- Localization Information -->
+<!DOCTYPE overlay SYSTEM "chrome://tiddlysnip/locale/tiddlysnip.dtd">
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+
+    <window title="&existwindow.title;"
+	id="existWindow"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	width="400"
+	height="150"
+	onload="initExistDialog()"
+	>
+
+	<stringbundleset id="stringbundleset">
+        <stringbundle id="tiddlysnip-strings"
+            src="chrome://tiddlysnip/locale/tiddlysnip.properties"/>
+    </stringbundleset>
+    <script type="application/x-javascript" src="tiddlySnip.js"/>
+    <script type="application/x-javascript" src="existDialog.js"/>
+
+
+    <vbox>
+	<caption label="&existcaption.label;"/>
+
+	<html:blockquote><label id="tiddlerTitle"/></html:blockquote>
+
+	<hbox pack="center">
+	    <button label="&exist.rename;" flex="0" oncommand="choose(TITLE_RENAME)" default="true"/>
+	    <button label="&exist.append;" id="appendButton" flex="0" oncommand="choose(TITLE_APPEND)"/>
+	    <button label="&exist.overwrite;" flex="0" oncommand="choose(TITLE_OVERWRITE)"/>
+	</hbox>
+    </vbox>
+</window>
+

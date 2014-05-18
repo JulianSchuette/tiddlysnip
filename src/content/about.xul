@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://tiddlysnip/skin/tiddlysnip.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://tiddlysnip/locale/tiddlysnip.dtd">
+
+
+
+<window class="dialog tiddlysnip-about-dialog"
+	title="&tiddlysnip.abouttitle.label;"
+	orient="vertical"
+	autostretch="always"
+	onload="sizeToContent()"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+<script type="application/x-javascript" src="about.js"/>
+
+<groupbox align="start" orient="horizontal" class="tiddlysnip-about-box">
+  <vbox>
+    <hbox>
+        <text value="TiddlySnip" class="tiddlysnip-title"/>
+        <image src="chrome://tiddlysnip/skin/tiddlysnip32.png"/>
+    </hbox>
+    <text value="&tiddlysnip.version.label; 1.3"/>
+
+    <separator class="thin"/>
+    <text value="&tiddlysnip.homepage.label;" class="tiddlysnip-subtitle"/>
+    <text value="TiddlySnip.com" class="tiddlysnip-url" onclick="ts_addTab('http://tiddlysnip.com');"/>
+
+    <separator class="thin"/>
+    <text value="&tiddlysnip.createdby.label;" class="tiddlysnip-subtitle"/>
+    <text value="Saq Imtiaz" class="tiddlysnip-url" onclick="ts_addTab('http://tw.lewcid.org');"/>
+    
+    <separator class="thin"/>
+    <text value="&tiddlysnip.developers.label;" class="tiddlysnip-subtitle"/>
+    <text value="Kalle Alm"/>
+
+    <separator class="thin"/>
+    <text value="&tiddlysnip.usefullinks.label;" class="tiddlysnip-subtitle"/>
+    <text value="&tiddlysnip.configguide.label;" class="tiddlysnip-url tiddlysnip-indent" onclick="ts_addTab('http://tiddlysnip.com/#[[User%20Guides]]');"/>
+    <text value="TiddlyWiki" class="tiddlysnip-url tiddlysnip-indent" onclick="ts_addTab('http://www.tiddlywiki.com');"/>
+    <text value="TiddlyThemes" class="tiddlysnip-url tiddlysnip-indent" onclick="ts_addTab('http://tiddlythemes.com');"/>
+    <text value="tiddlyspot" class="tiddlysnip-url tiddlysnip-indent" onclick="ts_addTab('http://tiddlyspot.com');"/>
+
+    <separator class="thin"/>
+    <text value="&tiddlysnip.license.label;" class="tiddlysnip-subtitle"/>
+    <hbox align="left">
+          <image src="chrome://tiddlysnip/skin/cc.png" onclick="ts_addTab('http://creativecommons.org/licenses/by-nc/2.5/');" style="margin-left:0px; cursor:pointer;" />  
+          <spacer flex="1" />
+   	</hbox>
+  </vbox>
+</groupbox>
+
+
+<hbox>
+  <spacer flex="1"/>
+  <button label="&tiddlysnip.close.label;" oncommand="window.close();"/>
+</hbox>
+
+</window>
